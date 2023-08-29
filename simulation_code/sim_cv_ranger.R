@@ -14,8 +14,8 @@ setup_dt <- setup_dt[algorithm %in% c("extratrees_cv", "ranger_cv")]
 #E: pure-2
 #F: pure-3
 
-models_chosen <- c("A")
-dimensions_chosen <- c(4)
+models_chosen <- c("F")
+dimensions_chosen <- c(6)
 algorithms_chosen <- c("extratrees_cv" )
 
 
