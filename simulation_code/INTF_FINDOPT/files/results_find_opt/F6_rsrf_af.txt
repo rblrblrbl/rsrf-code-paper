@@ -1,0 +1,14 @@
+Results Optimal parameter search.
+
+ Type:                     F 
+ n (sample/test size)      500 
+ d (Dimension)             6 
+ nsims                     2 
+ Learner                   rsrf_af 
+
+ Random Design Size        3 
+
+ Random seed used (doRNG)  123 
+
+ ------------------------------------
+

@@ -1,0 +1,14 @@
+Package: simpleRSRF
+Type: Package
+Title: RSRF Forest
+Version: 0.1.7
+Date: 25 Aug 2023
+Author: Ricardo Blum
+Maintainer: Ricardo Blum <ricardo.blum@uni-heidelberg.de>
+Description: Implementation of RSRF Forests in R.
+License: GPL-3
+Imports:
+    methods
+Suggests:
+Encoding: UTF-8
+RoxygenNote: 7.2.1

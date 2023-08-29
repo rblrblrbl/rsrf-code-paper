@@ -1,0 +1,64 @@
+Results Optimal parameter search.
+
+ Type:                     F 
+ n (sample/test size)      500 
+ d (Dimension)             6 
+ nsims                     30 
+ Learner                   rsrf_nf 
+
+ Random Design Size        200 
+
+ Random seed used (doRNG)  198 
+
+ ------------------------------------
+
+--------------------------
+
+ Found optimal parameters. 
+ Runtime 7.270141 hours 
+ --------------------------
+ Parameters: 
+
+
+ --------------------------
+
+ Fixed Parameters: 
+
+mtry_mode ____________ nothingfixed 
+
+fixed_cart_cart ____________ FALSE 
+
+rsrf_depth ____________ 2 
+
+num_trees ____________ 100 
+
+mtry_rsrf_step_random ____________ null_string 
+
+
+ --------------------------
+
+ Tuned (optimal) Parameters: 
+
+mtry_rsrf_step ____________ 4 
+
+rsrf_width ____________ 9 
+
+mtry_cart_cart ____________ 4 
+
+min_node_size ____________ 5 
+
+replace ____________ TRUE 
+
+include_CART_CART ____________ FALSE 
+
+--------------------------
+
+ ID:  13 
+ mean mse: 0.1830307 
+
+ --------------------------
+
+ Different style: 
+
+"mtry_rsrf_step"********"rsrf_width"********"mtry_cart_cart"********"min_node_size"********"replace"********"include_CART_CART"
+4********9********4********5********TRUE********FALSE

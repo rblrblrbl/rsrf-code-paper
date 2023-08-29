@@ -1,0 +1,116 @@
+Package: mlr3extralearners
+Title: Extra Learners For mlr3
+Version: 0.6.1
+Authors@R: c(
+    person("Raphael", "Sonabend", , "raphaelsonabend@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0001-9225-4654")),
+    person("Patrick", "Schratz", , "patrick.schratz@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0003-0748-6624")),
+    person("Lorenz A.", "Kapsner", , "lorenz.kapsner@gmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0003-1866-860X")),
+    person("Lennart", "Schneider", , "lennart.sch@web.de", role = "ctb",
+           comment = c(ORCID = "0000-0003-4152-5308")),
+    person("Stephen A", "Lauer", , "stephenalauer@gmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0003-2948-630X")),
+    person("Pierre", "Camilleri", , "camilleri_pierre@hotmail.fr", role = "ctb"),
+    person("Javier", "García", , "geshter@hotmail.com", role = "ctb"),
+    person("Keenan", "Ganz", , "ganzkeenan1@gmail.com", role = "ctb"),
+    person("Byron", "Jaeger", , "bjaeger@wakehealth.edu", role = "ctb"),
+    person("Sebastian", "Fischer", , "sebf.fischer@gmail.com", role = c("cre", "aut")),
+    person("Zezhi", "Wang", ,"homura@mail.ustc.edu.cn", role = "ctb")
+  )
+Description: Extra learners for use in mlr3.
+License: LGPL-3
+Depends:
+    R (>= 3.1.0)
+Imports:
+    checkmate,
+    data.table,
+    methods,
+    mlr3 (>= 0.13.4),
+    mlr3misc (>= 0.9.4),
+    paradox,
+    R6
+Suggests:
+    abess,
+    aorsf (>= 0.0.5),
+    actuar,
+    apcluster,
+    C50,
+    catboost,
+    coin,
+    CoxBoost,
+    Cubist,
+    curl,
+    dbarts,
+    distr6,
+    earth,
+    flexsurv,
+    FNN,
+    formattable,
+    future,
+    gbm,
+    glmnet,
+    gss,
+    jsonlite,
+    keras (>= 2.3.0),
+    kernlab,
+    knitr,
+    ks,
+    LiblineaR,
+    lightgbm (>= 3.0.0),
+    lme4,
+    locfit,
+    logspline,
+    mboost,
+    mda,
+    mgcv,
+    mlr3cluster,
+    mlr3learners (>= 0.4.2),
+    mlr3proba,
+    mlr3pipelines,
+    mvtnorm,
+    nnet,
+    np,
+    obliqueRSF,
+    param6,
+    partykit,
+    penalized,
+    pendensity,
+    plugdensity,
+    pracma,
+    prioritylasso,
+    pseudo,
+    randomForest,
+    randomForestSRC,
+    ranger,
+    remotes,
+    reticulate (>= 1.16),
+    rsm,
+    rvest,
+    RWeka,
+    sandwich,
+    set6,
+    sm,
+    stats,
+    survival,
+    survivalmodels,
+    survivalsvm,
+    tensorflow (>= 2.0.0),
+    testthat,
+    xgboost
+Remotes:
+    alan-turing-institute/distr6,
+    catboost/catboost/catboost/R-package@*release,
+    binderh/CoxBoost,
+    mlr-org/mlr3proba,
+    RaphaelS1/survivalmodels,
+    xoopR/param6,
+    xoopR/set6
+VignetteBuilder:
+    knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+NeedsCompilation: no
+Roxygen: list(markdown = TRUE, r6 = TRUE)
+RoxygenNote: 7.2.2

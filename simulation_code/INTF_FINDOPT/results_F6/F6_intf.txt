@@ -1,0 +1,54 @@
+Results Optimal parameter search.
+
+ Type:                     F 
+ n (sample/test size)      500 
+ d (Dimension)             6 
+ nsims                     30 
+ Learner                   intf 
+
+ Random Design Size        200 
+
+ Random seed used (doRNG)  921 
+
+ ------------------------------------
+
+--------------------------
+
+ Found optimal parameters. 
+ Runtime 10.20706 hours 
+ --------------------------
+ Parameters: 
+
+
+ --------------------------
+
+ Fixed Parameters: 
+
+num.threads ____________ 1 
+
+importance ____________ none 
+
+num.trees ____________ 500 
+
+
+ --------------------------
+
+ Tuned (optimal) Parameters: 
+
+npairs ____________ 99 
+
+min.node.size ____________ 22 
+
+replace ____________ TRUE 
+
+--------------------------
+
+ ID:  178 
+ mean mse: 0.143447 
+
+ --------------------------
+
+ Different style: 
+
+"npairs"********"min.node.size"********"replace"
+99********22********TRUE
