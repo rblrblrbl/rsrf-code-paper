@@ -1,5 +1,0 @@
-Submit-Dir:  C:/Users/ricar/Documents/Universitaet-Projekte/Projekt-Paper-Chi-et-al/R-Code/rsrf-code-paper/simulation_code/INTF_FINDOPT 
-Job-ID:  123456789 
-Start for design index : 1 
-Start for design index : 2 
-Start for design index : 3 
