@@ -1,10 +1,9 @@
 #Needs package mlr3
-#A: pure interaction
+#A: pure-type
 #B: hierarchical
 #C: additive
-#D: Modified example from paper "High Dimensional Properties of Random Forests" (old)
-#E: Modified example from paper "High Dimensional Properties of Random Forests"
-#F: pure-add: Modified example from paper "High Dimensional Properties of Random Forests" with several additive components
+#E: pure-2
+#F: pure-3
 
 
 generateTasklist <- function( type, nsims, n, d){
@@ -41,16 +40,6 @@ generateTasklist <- function( type, nsims, n, d){
       t$set_row_roles( (n+1):(2*n), roles= c("holdout") )
       ret[[i]] <- t
     }
-    if( type == "D"){
-      m_reg <- function(x1,x2,x3, ...) return( m_interact2_factor( factor = 3, x1,x2,x3))
-      train<- subset( generateDataUnif( n = n, d = d, m_reg = m_reg), select = -mx)
-      eval <- subset( generateDataUnif( n = n, d = d, m_reg = m_reg, errortype = "noiseless"), select = -mx )
-      t <- as_task_regr( train, target = "y" )
-      t$set_row_roles( 1:n, roles = c("use"))
-      t$rbind( eval )
-      t$set_row_roles( (n+1):(2*n), roles= c("holdout") )
-      ret[[i]] <- t
-    }
     if( type == "E"){
       m_reg <- function(x1,x2,x3, ...) return( m_interact2_factor( factor = 5, x1,x2,x3))
       train<- subset( generateDataUnif( n = n, d = d, m_reg = m_reg), select = -mx)
@@ -76,7 +65,7 @@ generateTasklist <- function( type, nsims, n, d){
   return( list(tasks = ret, nsims = nsims, n = n, model_index = type, d = d) )
 }
 
-
+#not used
 generateTasklistManualUnif <- function( m, model_index_name = "manually chosen", nsims, n, d ){
     ret <- list()
     for( i in 1:nsims){

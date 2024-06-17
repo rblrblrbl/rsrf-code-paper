@@ -2,6 +2,7 @@
 #SAVES tasks into folder -> to be used by main_simfile.R
 #SAVES setup (indexed list of algorithm-tasks-combintion) as setup_dt.RDS. This list contains all simulations which shall be made.
 #ATTENTION: make sure to run this file only once. -> use same simulated data for each algorithm
+# --> Generated data used in the simulations in the paper is available in folders named "tasks_serious" (combined test/train data for use with mlr3) and "tasks_serious_list" (stored as R list objects)
 
 #for testing: set generate_tasklist_serious to FALSE and ..._test to TRUE.
 

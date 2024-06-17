@@ -2,6 +2,8 @@
 ###REGRESSION FUNCTIONS###
 #Simple 2-Interaction with linear component
 m_interact2 <- function(x1,x2,x3,...){ return( (x1 - 0.5) * (x2 - 0.5) + x3 ) }
+
+### used for (pure-2) in paper ####
 m_interact2_factor <- function(x1,x2,x3,factor = 10, ...){ return( factor*( (x1 - 0.5) * (x2 - 0.5) + x3 ) ) }
 #OLD m_interact2_factor <- function(x1,x2,x3,factor = 10, ...){ return( factor*(x1 - 0.5) * (x2 - 0.5) + x3 ) }
 #Simple sparse 2-Interaction
@@ -9,6 +11,7 @@ m_interact2_sparse <- function(x1,x2,...){ return( (x1- 0.5) * (x2 - 0.5)  )}
 #Simple linear
 m_lin <- function(x1,x2,x3,...){ return(x1 + x2 + x3) }
 #Pure Sparse
+### (pure-type) in paper ####
 m_pure_sparse <- function(x1,x2,x3,...){
   return( -2*sin(x1 * x2 * pi ) + 2 * sin( x2 * x3 * pi ) )
 }
@@ -17,14 +20,17 @@ m_pure_dense <- function(x1,x2,x3,x4,...){
   return( -2*sin(x1 * x2 * pi ) + 2 * sin( x2 * x3 * pi ) - 2 * sin( x3 * x4 * pi ) )
 }
 #Hierarchical
+### (hierarchical) in paper ####
 m_hierarchical <- function(x1,x2,x3,...){
   -2*sin(x1 * pi) + 2*sin(x2 * pi) - 2*sin(x3 * pi) -2*sin(x1 * x2 * pi ) + 2 * sin( x2 * x3 * pi )
 }
 #Additive
+### (additive) in paper ####
 m_additive <- function(x1,x2,x3,...){
   return( -2*sin(x1 * pi) + 2*sin(x2 * pi) - 2*sin(x3 * pi) )
 }
 
+### used for (pure-3) in paper ####
 m_interact2_factor_add <- function(x1,x2,x3,x4,x5,x6,A=10, B=1,...){ return( A*( (x1 - 0.5) * (x2 - 0.5) ) + B*(x3 + x4 + x5 + x6  ) )}
 
 ###DATA GENERATING FUNCTIONS###
