@@ -1,0 +1,21 @@
+Results from CV for RANDOM FORESTS
+
+ Dataset:       airfoil 
+ seed:          9 
+
+ algoritm:      rf 
+
+ RANDOM FOREST-Setting.
+ mtry:          5 
+ ntrees:        500 
+ CV-Setting.
+ no. folds 10 
+
+ --------------------
+ ----   RESULTS  ----
+ --------------------
+
+ est. MSE:      3.16245 
+ standard dev:  0.6059818 
+
+

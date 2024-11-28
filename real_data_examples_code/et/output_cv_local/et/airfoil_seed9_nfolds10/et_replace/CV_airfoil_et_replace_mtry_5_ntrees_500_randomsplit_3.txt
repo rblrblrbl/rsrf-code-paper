@@ -1,0 +1,22 @@
+Results from CV for EXTRATREES
+
+ Dataset:             airfoil 
+ seed:                9 
+
+ algoritm:            et_replace 
+
+ EXTRA TREES-Setting.
+ mtry:                5 
+ ntrees:              500 
+ num.random.splits:   3 
+ CV-Setting.
+ no. folds 10 
+
+ --------------------
+ ----   RESULTS  ----
+ --------------------
+
+ est. MSE:      3.035622 
+ standard dev:  0.5673937 
+
+

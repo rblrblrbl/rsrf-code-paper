@@ -1,0 +1,24 @@
+Results from CV for RSRF.
+
+ Dataset:       airfoil 
+ seed:          9 
+
+ RSRF-Setting.
+ Variant:       rsrf_nf 
+ mtry value:    2 
+ width value:   15 
+
+ CV-Setting.
+ no. folds 10 
+
+ --------------------
+ ----   RESULTS  ----
+ --------------------
+
+ est. MSE:      2.90757 
+ standard dev:  0.605156 
+
+
+ Parallel time using doParallel on 5 workers: 1291.433000
+ 
+    ... in hours: 0.3587314 
