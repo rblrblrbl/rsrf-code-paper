@@ -38,7 +38,7 @@ Needs package diversityForest. See "intf" and the file "error_intf.R". The simul
 See "intf" and the file "error_intf.R". In the code, it is shown which arguments are needed to be supplied when running the R file.
 
 ### INFORMATION ON SEEDS USED FOR THE SIMULATIONS ###
-The seeds can be supplied with the different simulation files. For the results used in the paper, the following seeds were set for the different data examples:
+The seeds can be supplied with the different simulation files. For the results that were used for the plots in the paper, the following seeds were set for the different data examples:
 concrete / concrete_hd: 3
 airfoil / airfoil_hd: 9
 abalone_all / abalone_all_hd: 2
