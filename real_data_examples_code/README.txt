@@ -44,3 +44,28 @@ airfoil / airfoil_hd: 9
 abalone_all / abalone_all_hd: 2
 robot / robot_hd: 423 
 california_housing_div / california_housing_div_hd: 141
+
+### FIGURES ###
+The files that generates the figures with the boxplots can be found in the folder "plots". A full running example is included for the airfoil datasets in "plots/airfoil".
+The file "create_plots_example_airfoil.R" will aggregate the simulation results (for airfoil, the results are stored in the different folders within "plots/airfoil") and will then produce the plots in the paper for the "airfoil" example.
+These plots will be saved in "plots/airfoil/plots".
+Note that, for producing plots for the remaining examples, the file "create_plots_example_airfoil.R" must be modified accordingly, and the different ".RDS" result files must be collected beforehand by running the different methods (see above).
+
+################################################
+
+### PACKAGE VERSIONS USED FOR RF/ET/INTF/RSRF###
+Ranger (ranger_0.16.0)
+diversityForest (diversityForest_0.3.4)
+simpleRSRF (version used in paper can be found in "../package_version_used_in_simulation")
+
+### R-Versions/Systems
+For INTF/RSRF the following system and R version was used:
+R version 4.1.2 (2021-11-01)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Red Hat Enterprise Linux 8.6 (Ootpa)
+Package versions: doParallel_1.0.16 iterators_1.0.13  doRNG_1.8.6 rngtools_1.5.2 foreach_1.5.1
+
+For RF / ET:
+R version 4.4.0 (2024-04-24 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows 11 x64 (build 22621)
