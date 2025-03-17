@@ -14,9 +14,11 @@ california housing -> chd
 ### Datasets ###
 See directory "datasets" where the pre-prepared .RDS files are stored. Description of datasets is provided in the paper.
 
+
 ### Generation of noisy covariates ###
 See "datasets/files_hd/gen_hd.R". This file takes e.g. "airfoil.RDS" and will generate "airfoil_hd.RDS".
 This contains the 50 newly added covariables, as described in the paper. The seeds used here can be found in the code "gen_hd.R"
+
 
 ### ET (Extremely Randomized Trees) ###
 Needs package ranger. 
@@ -25,7 +27,8 @@ See folder "et" and the file "ncv_et.R" and "ncv_et_v2.R" and the readme in the 
 Note that we use the following abbreviations for the two variants considered in the paper:
 "et_replace" (using bootstrap samples in the trees)
 "et_sf1" (using original sample)
-This needs to be set for the variable alg_from_input when running the R script 
+This needs to be
+ set for the variable alg_from_input when running the R script 
 
 ### RF (Random Forests) ###
 Needs package ranger. 
@@ -35,14 +38,17 @@ Note that we use the following abbreviations for the two variants considered in 
 "rf" (using bootstrap samples in the trees)
 "rf_norep" (using subsamples, setting as in ranger package)
 
+
 ### RSRF (Random Split Random Forests) ###
 Needs package simpleRSRF provided at github. The simulations were run on a computing cluster system because code is only available in plain R and not optimized. 
 See folder "rsrf" and the files/readme therein. Best use a batch script to supply the arguments in order to run the simulations.
+
 
 ### INTF (Interaction Forests) ###
 Needs package diversityForest. See "intf" and the file "ncv_intf.R" and "run_on_best_intf.R".
 "intf" (using bootstrap samples in the trees)
 "intf_norep" (using subsamples, setting as in diversityForest package)
+
 
 ### SEEDS ###
 The following seeds were used for the results shown in the paper for RF / ET. For the other methods, see the details provided in the files RSRF resp. INTF.
@@ -51,6 +57,11 @@ airfoil / airfoil_hd: 9
 abalone_enc / abalone_enc_hd : 11
 robot / robot_hd: 52
 chd / chd_hd: 7
+
+
+### PLOTS ###
+In the folder plots_example_ncv, running the file "plot_airfoil.R" will produce the plots from the paper for the airfoil dataset.
+Please read the comment in "plot_airfoil.R" on how the results from running the methods on the datasets needs to be loaded into R for plotting.
 
 ################################################
 
