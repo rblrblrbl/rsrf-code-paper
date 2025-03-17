@@ -1,0 +1,87 @@
+Here, the seeds are documented that have been set for the individual runs of the files ncv_rsrf_nf.R. 
+The seed is handed over when running the .R file.
+For example, the variables to be loaded when running ncv_rsrfnf.R for airfoil the airfoil dataset, using RSRF, with outerfold 4, in the second round of the two nested CV iterations and with seed 874 is:
+'--args airfoil FALSE 30 rsrf_nf 4 TRUE 874 2'
+
+
+###################
+# RSRF-NF (norep) #
+###################
+
+concrete 
+R1   682 880 69 111 138  
+R2   244 320 909 794 962
+ 
+airfoil 
+R1   10 455 295 483 344  
+R2   124 760 318 921 532 
+
+abalone_enc 
+R1   798 226 850 258 203  
+R2   118 136 433 699 596
+ 
+robot 
+R1   770 644 746 309 223 
+R2   178 829 604 969 277
+ 
+chd 
+R1   826 721 514 830 586  
+R2   706 458 372 236 84 
+
+concrete_hd 
+R1   246 804 539 775 84  
+R2   90 287 210 108 559 
+ 
+airfoil_hd 
+R1   949 714 452 61 555 
+R2   997 370 162 932 191 
+ 
+abalone_enc_hd 
+R1   906 224 823 73 572  
+R2   480 508 881 702 535 
+ 
+robot_hd 
+R1   246 169 811 897 371 
+R2   840 845 222 957 907 
+ 
+
+#########
+#RSRF-NF#
+#########
+
+Concrete
+R1: 31 32 33 34 35
+R2: 215 225 235 245 255
+
+Airfoil
+R1: 91 92 93 94 95
+R2: 844 854 864 874 884
+
+Abalone_enc
+R1: 396 166 739 262 976
+R2: 89 365 682 896 450
+
+Robot: 
+R1: 521 522 523 524 525
+R2: 163 744 477 975 371
+
+Chd
+R1: 71 72 73 74 75
+R2: 674 438 611 367 579 
+
+Concrete (HD)
+R1: 641 642 643 644 645
+R2: 12 292 682 326 363
+
+Airfoil (HD)
+R1: 271 272 273 274 275
+R2: 836 679 129 930 509
+
+Abalone_enc (HD)
+R1: 7 914 337 187 182
+R2: 724 437 271 758 240
+
+Robot (HD)
+R1: 361 362 363 364 365
+R2: 471 299 270 978 187
+

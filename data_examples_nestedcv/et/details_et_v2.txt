@@ -1,0 +1,32 @@
+Below, the seeds are documented that have been set for ET when using the version "ncv_et_v2.R".
+
+For example, the variables to be loaded when running ncv_et_v2.R for the abalone_enc dataset, using ET, with outerfold 4, in the second round of the two nested CV iterations was:
+R CMD BATCH --no-save --no-restore --slave '--args abalone_enc et_replace 500 2423 round2 4' ncv_et_v2.R
+
+
+# et_replace #
+abalone_enc 
+R1 331 4821 9618 8973 5789
+R2 7566 1756 5685 2423 1751
+
+abalone_enc_hd
+R1 3662 5983 9329 2002 7807
+R2 9428 5269 3781 7011 9757
+
+chd_hd 
+R1 6498 8003 2343 8578 3441  
+R2 4739 9618 4362 6478 8007 
+ 
+  
+# et_sf1 # 
+abalone_enc
+R1 345 3729 735 8230 6072
+R2 5353 9192 9574 9247 4052
+
+abalone_enc_hd
+R1 2515 2324 694 8964 5760
+R2 1736 1267 4560 3724 5037
+
+chd_hd
+R1 3683 2131 2920 9088 9317 
+R2 169 8392 2069 7745 273 

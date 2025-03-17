@@ -31,9 +31,9 @@ if(onCluster){
 }
 
 if(!onCluster){
-  #setwd( ... ) set to file where code is so
+  #setwd( ... ) set to file where code is saved
   data_id_from_input <- "airfoil" #e.g. airfoil
-  alg_from_input <- "rf"  #rf #et
+  alg_from_input <- "rf"  #rf
   ntrees_from_input <- 500 #500
   replace_from_input <- TRUE
   seed_from_input <- 3  #e.g. 123, or "NA"

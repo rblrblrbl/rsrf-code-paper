@@ -4,7 +4,7 @@ Here we provide an overview over the code used for the simulations on the real d
 Note that the folders "datasets" and "folds" need to be in the same directory as the ".R" files (e.g. "ncv_et.R" etc.).
 
 ### Abbreviations. For the (HD) versions, add "_hd".###
-PAPER -> DATASET NAME USED IN THE CODE
+PAPER -> DATASET ABBREVIATION USED IN THE CODE
 concrete -> concrete
 airfoil -> airfoil
 abalone -> abalone_enc
@@ -43,6 +43,14 @@ See folder "rsrf" and the files/readme therein. Best use a batch script to suppl
 Needs package diversityForest. See "intf" and the file "ncv_intf.R" and "run_on_best_intf.R".
 "intf" (using bootstrap samples in the trees)
 "intf_norep" (using subsamples, setting as in diversityForest package)
+
+### SEEDS ###
+The following seeds were used for the results shown in the paper for RF / ET. For the other methods, see the details provided in the files RSRF resp. INTF.
+concrete / concrete_hd: 3
+airfoil / airfoil_hd: 9
+abalone_enc / abalone_enc_hd : 11
+robot / robot_hd: 52
+chd / chd_hd: 7
 
 ################################################
 

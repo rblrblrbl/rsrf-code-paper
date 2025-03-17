@@ -1,0 +1,116 @@
+Here, the seeds are documented that have been set for INTF.
+Example: When running "ncv_intf.R" for airfoil,
+For example, the variables to be loaded when running ncv_intf.R for the airfoil dataset, using INTF, with outerfold 4, in the second round of the two nested CV iterations was:
+R CMD BATCH --no-save --no-restore --slave '--args airfoil intf 500 2663 TRUE 4 round2' ncv_intf.R
+
+##########
+###INTF###
+##########
+
+concrete 
+ R1   6258 7024 8013 2115 5271  
+ R2   8030 5177 5997 2809 2140 
+ 
+concrete_hd 
+R1   6745 2158 477 8084 705  
+R2   9801 6910 3132 3886 8057 
+ 
+airfoil 
+R1   5020 9139 7700 5180 4523  
+R2   3795 4184 6771 2663 3273
+ 
+airfoil_hd 
+R1   8874 6000 1093 7279 5258  
+R2   7412 9154 246 2587 9991 
+
+abalone_enc 
+R1   9079 3145 7299 7661 797  
+R2   9987 4700 9359 1254 4571 
+ 
+abalone_enc_hd 
+R1   3298 7202 4740 7978 7340  
+R2   4321 2494 6577 7384 2695
+
+robot 
+R1   9980 8664 3911 834 79  
+R2   5810 7892 9484 3570 617
+
+robot_hd 
+R1   3939 4092 4302 8941 137  
+R2   3392 9047 6519 7496 1169 
+ 
+chd (note that have split up the npairs range here for computational reasons, and have combined the results.
+for npairs 1 10 25, 50, ..., 250
+R1   1740 9812 1527 5396 9649 
+R2   7954 4204 5531 5784 649 
+for npairs 300, 400, ..., 700 
+R1   626 3464 9956 8996 8920 
+R2   4440 5979 9128 6369 5042
+ 
+chd (using best parameters)
+R1   15639 13187 15293 15377 19432 
+R2   17236 19772 10793 18330 16426 
+  
+chd_hd ### npairs 50,100,200,...,1000 
+R1   7540 1367 928 5962 963  
+R2   8478 6199 3736 492 1853 
+ 
+chd_hd (using best parameters)
+R1   13078 3126 10316 9068 2806 
+R2   12643 489 234 17470 6929 
+ 
+
+###############
+## INTF norep##
+###############
+concrete 
+R1   3810 8350 8760 6784 7668  
+R2   4222 9195 5941 3258 6976 
+ 
+concrete_hd 
+R1   7225 312 9033 6729 6755  
+R2   897 3778 5304 7532 6661 
+ 
+abalone_enc 
+R1   6220 4793 9464 6440 6903  
+R2   3188 2374 8709 9774 9383 
+ 
+abalone_enc_hd 
+R1   6785 840 750 7491 7752 
+R2   4378 6218 4600 4247 8653 
+ 
+airfoil 
+R1   5020 9139 7700 5180 4523  
+R2   3795 4184 6771 2663 3273
+ 
+airfoil_hd 
+R1   7455 4306 9324 6970 3902 
+R2   1610 3778 2284 2688 5120 
+ 
+robot 
+R1   2835 2700 9745 4539 548 
+R2   6146 5127 6118 4605 7160 
+
+robot_hd 
+R1   4837 1566 6264 3127 5463
+R2   5423 8831 2866 5503 3815
+ 
+chd (note that we have split up the npairs range here for computational reasons, and have combined the results.
+for npairs 1 10 25, 50, ..., 250
+R1   1034 4719 507 8725 5673 
+R2   9643 1601 6760 354 7967
+for npairs 300, 400, ..., 700 
+R1   7319 3116 425 798 7975 
+R2   1588 1390 7167 4631 2764 
+ 
+chd (using best parameters) 
+R1   11791 11136 18063 13219 14960 
+R2   12916 10217 13272 10139 18612 
+ 
+chd_hd #npairs 50,100,200,...,1000
+R1 5471 1523 9725 9932 7195
+R2 4017 6346 9460 7452 2892
+
+chd_hd (using best parameters)
+R1   10128 13390 14250 11443 13774  
+R2   10755 19761 13992 15469 10084  
